@@ -1,5 +1,6 @@
 package com.ar.test
 
+import com.ar.ObjetosTest.TableroParaTest
 import com.ar.clases.{Personaje, Jugador}
 import com.ar.com.ar.politicaDeAtaque.EvitarProblema
 import com.ar.politicaDePersonaje.Pancho

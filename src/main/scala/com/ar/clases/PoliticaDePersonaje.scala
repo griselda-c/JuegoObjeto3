@@ -5,6 +5,6 @@ package com.ar.clases
  */
 abstract class PoliticaDePersonaje {
 
-   def sugerenciaDeMovimiento : Boolean
+   def sugerenciaDeMovimiento(personaje: Personaje) : Boolean
 
 }

@@ -1,4 +1,6 @@
 package com.ar.test
+
+import com.ar.ObjetosTest.TableroParaTest
 import org.scalatest.FlatSpec
 import com.ar.clases.Tablero
 import com.ar.clases.Celda
@@ -20,6 +22,25 @@ class TestTablero extends FlatSpec {
     assert(tablero.celdas.size == 4)
   }
 
+  it should "devolver la celda B2" in {
+    val tablero = new TableroParaTest()
+    val celda = tablero.getCelda("B2")
+
+    assert(celda.nombre == "B2")
+  }
+
+  it should "devolver las celdas A1 y B2" in {
+    val tablero = new TableroParaTest()
+    val nombres = List("A1","B2")
+    val lista = tablero.getCeldas(nombres)
+    assert(lista.head.nombre == "A1")
+    assert(lista.tail.head.nombre == "B2")
+
+  }
+
+  it should "retornar que existen 2 personajes vecinos" in {
+
+  }
 
 
 }
